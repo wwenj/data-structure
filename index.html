@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>myvue</title>
+  <script src="http://sec-aegisfe.didistatic.com/static/aegisfe/water-mark1.0.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script>
+    waterMark({
+      //使用必须传入这两个参数
+      //一个页面不能反复初始话，反复初始话会报警告
+      //系统ID
+      systemId: '012',
+      //当前用户ID 邮箱前缀
+      userId: 'wangwenjian_i',
+
+      //以下两个参数控制水印横向和纵向间距，调整参数即可调整水印密集程度
+      //宽度上的间距，内部会根据文字长度自动获取一个宽度imgWidth再加上这个imgWidthDis  -->width = imgWidth + imgWidthDis
+      imgWidthDis: 100,
+      //高度上的间距，内部会根据文字长度自动获取一个高度imgHeight再加上这个imgWidthDis -->height = imgHeight + imgHeightDis
+      imgHeightDis: 100,
+
+      //文字样式，理论上不允许随意更改水印文字样式
+      //只支持修改文字颜色和透明度，文字透明度要求在0.03以上
+      textStyle: 'rgba(0,0,0,0.15)',
+      //水印的z-index
+      zIndex: 10000,
+      //需要打水印的容器 El的position不能是static，如果是static会被默认改为relative，这样水印才会生效
+      containerEl: document.body,
+      //监视时间间隔
+      time: 1000,
+      //是否直接禁用掉鼠标右键Î
+      disableContextMenu: false,
+      //是否启用，不让其选择，默认不启用
+      disableSelect: false,
+      //不能选择的区域，传入一个原生dom元素
+      disableSelectEl: '',
+      //是否禁止拷贝
+      disableCopy: false,
+      //禁止复制的元素容器
+      disableCopyEl: '',
+      //打印页面属于的字体颜色
+      printColor: 'rgba(0, 0, 0, 0.5)',
+    })
+
+  </script>
+</body>
+
+</html>
