@@ -5,7 +5,7 @@
 
 ### 目录
 
-- [单链表](https://github.com/wwenj/data-structure)
+- [单链表](https://github.com/wwenj/data-structure/blob/master/src/components/链表/单链表.vue)
 - [双向链表](https://github.com/wwenj/data-structure)
 - [双向循环链表](https://github.com/wwenj/data-structure)
 - [栈](https://github.com/wwenj/data-structure)
