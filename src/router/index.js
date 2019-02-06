@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home'
-import linkedSingle from '@/components/链表/单链表.vue'
+import linkedSingle from '@/components/单链表/index.vue'
 
 Vue.use(Router)
 

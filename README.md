@@ -5,11 +5,11 @@
 
 ### 目录
 
-- [单链表](https://github.com/wwenj/data-structure/blob/master/src/components/链表)
-- [双向链表](https://github.com/wwenj/data-structure)
-- [双向循环链表](https://github.com/wwenj/data-structure)
-- [栈](https://github.com/wwenj/data-structure)
-- [队列](https://github.com/wwenj/data-structure)
+- [单链表](https://github.com/wwenj/data-structure/blob/master/src/components/单链表)
+- [双向链表](https://github.com/wwenj/data-structure/blob/master/src/components/双向链表)
+- [双向循环链表](https://github.com/wwenj/data-structure/blob/master/src/components/双向循环链表)
+- [栈](https://github.com/wwenj/data-structure/blob/master/src/components/栈)
+- [队列](https://github.com/wwenj/data-structure/blob/master/src/components/队列)
 
 ### 运行
 
