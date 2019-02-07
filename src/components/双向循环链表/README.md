@@ -31,7 +31,6 @@
 
 - `obj.size()`返回该链表的长度
 - `obj.display()`数组形式返回该链表，便于观察，测试
-- `obj.reversal()`链表顺序反转（递归）
 
 ### 方法代码
 
@@ -40,6 +39,17 @@
 ```javascript
       function LinkedList (...rest) {
         this._head = new Node('_head') // 链表头节点
+        this.find = find
+        this.findPrev = findPrev
+        this.findIndex = findIndex
+        this.findIndexOf = findIndexOf
+        this.push = push
+        this.insert = insert
+        this.insertIndex = insertIndex
+        this.remove = remove
+        this.removeIndex = removeIndex
+        this.display = display
+        this.size = size
         // 如果new时有传进值，则添加到实例中
         if (rest.length) {
           this.insert(rest[0], '_head')
@@ -48,18 +58,6 @@
           }
         }
       }
-      LinkedList.prototype.find = find
-      LinkedList.prototype.findPrev = findPrev
-      LinkedList.prototype.findIndex = findIndex
-      LinkedList.prototype.findIndexOf = findIndexOf
-      LinkedList.prototype.push = push
-      LinkedList.prototype.insert = insert
-      LinkedList.prototype.insertIndex = insertIndex
-      LinkedList.prototype.remove = remove
-      LinkedList.prototype.removeIndex = removeIndex
-      LinkedList.prototype.size = size
-      LinkedList.prototype.display = display
-      LinkedList.prototype.reversal = reversal
 ```
 
 **创建新节点类**
@@ -225,25 +223,6 @@
         }
 ```
 
-**obj.reversal()**
-
-```javascript
-      // 链表反转=>递归
-      function reversal () {
-        function reversalList (item) {
-          if (item.next) {
-            let tmpItem = reversalList(item.next)
-            item.next = null
-            tmpItem.next = item
-            return item
-          } else {
-            obj._head.next = item
-            return item
-          }
-        }
-        reversalList(obj._head.next)
-      }
-```
 **obj.display()**
 
 ```javascript
@@ -289,8 +268,5 @@
       console.log(obj.findIndex(2))
       console.log('---元素查找索引')
       console.log(obj.findIndexOf('节点3'))
-      console.log('---反转链表')
-      obj.reversal()
-      console.log(obj.display())
 ```
 
